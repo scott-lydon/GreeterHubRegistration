@@ -1,0 +1,74 @@
+<html>
+<head>
+  <title>Greeter Hub Registration website</title>
+    <link rel="stylesheet" type="text/css" href="GreeterHubRegistration.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    
+</head>
+<body>
+<div class="greentop">
+    <p class="topleft"><b>GREETER</b></p>
+     <button id="signup">SignUp</button>
+    <button id="login">Login</button>
+    <a href="http://virtualgoldstar.com/upload/src_image/img_1363024548.jpg" class="already">Already a Member?</a>
+    <p id="title">Become a Greeter Destination!</p>
+   
+    <div id="left">
+        <p id="floatright">Get Customers sent to<br>your business!</p>
+    </div>
+    <div id="mid">
+        <p>Increase your social<br>reputation!</p>
+    </div>
+    <div id="right">
+        <p id="floatleft">See your business on our<br>map of Greeter Hubs!</p>
+    </div>
+</div>
+<div id="meet">Meet some of our Greeter Destinations</div>
+
+<div id="container1"></div>
+ 
+<div id="greenbottom">
+    <div id="registertext">I want to register!</div>
+    
+  <section class="section" id="business">
+    <div class="container" id="c1">
+      <input type="radio" name="group1" id="radio-1">
+      <label for="radio-1"><span class="radio" >I have a Bar/Lounge</span></label>
+    </div>
+    <div class="container" id="c2">
+      <input type="radio" name="group1" id="radio-2">
+      <label for="radio-2"><span class="radio" >A restaurant (full service)</span></label>
+    </div>
+    <div class="container" id="c3">
+      <input type="radio" name="group1" id="radio-3">
+      <label for="radio-3"><span class="radio" >A Grab and Go</span></label>
+    </div>
+  </section>
+  <button id="proceed">Proceed</button>
+
+</div>
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    
+var bizName = ["Magda Luna", "Jougert Bar", "Bobabia", "Leland Tea Company", "El Torero", "Sweet Inspirations"]; 
+var bizCity = ["Burlingame", "Burlingame", "San Mateo", "Burlingame", "Oakland", "San Francisco"]; 
+var bizState = ["CA", "CA", "CA", "CA", "CA", "CA"]; 
+var bizOwnersImage = ["http://www.magdalunacafe.com/wp-content/uploads/2013/02/owners.jpg", "http://www.magdalunacafe.com/wp-content/uploads/2013/02/owners.jpg", "http://www.magdalunacafe.com/wp-content/uploads/2013/02/owners.jpg", "http://www.magdalunacafe.com/wp-content/uploads/2013/02/owners.jpg", "http://www.magdalunacafe.com/wp-content/uploads/2013/02/owners.jpg", "http://www.magdalunacafe.com/wp-content/uploads/2013/02/owners.jpg", ]; 
+var bizYelp = ["https://www.yelp.com/biz/magdaluna-mexican-cafe-burlingame", "https://www.yelp.com/biz/jougert-bar-burlingame", "https://www.yelp.com/biz/bobabia-san-mateo", "https://www.yelp.com/biz/leland-tea-company-burlingame", "https://www.yelp.com/biz/el-torero-taqueria-oakland", "https://www.yelp.com/biz/sweet-inspiration-ft-mikes-place-san-francisco-2?osq=Sweet+Inspirations"];
+
+for (var i = 0; i < bizName.length; i++) {
+    $("#container1").append("<div class='bizbox'><a href='"+bizYelp[i]+"' class='linkr'><p>"+bizName[i]+"<br>"+bizCity[i]+",  "+bizState[i]+"</p><img src='"+bizOwnersImage[i]+"' class='owner'><img src='http://truselfsportingclub.com/wp-content/uploads/2015/08/5-Star-Yelp-Review-TruSelf-Sporting-Club-image.png' class='yelpimg'></a></div>");
+}
+    
+
+</script>
+
+</body>
+
+
+
+
+</html>
