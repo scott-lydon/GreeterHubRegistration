@@ -9,9 +9,10 @@
 <body>
 <div class="greentop">
     <p class="topleft"><b>GREETER</b></p>
-     <button id="signup">SignUp</button>
-    <button id="login">Login</button>
-    <a href="http://virtualgoldstar.com/upload/src_image/img_1363024548.jpg" class="already">Already a Member?</a>
+        <button id="signup" onclick="document.getElementById('signupModal').style.display='block'">SignUp</button>
+        <button id="login" onclick="document.getElementById('loginModal').style.display='block'">Login</button>
+        <a href="http://virtualgoldstar.com/upload/src_image/img_1363024548.jpg" class="already">Already a Member?</a>
+
     <p id="title">Become a Greeter Destination!</p>
    
     <div id="left">
@@ -25,7 +26,55 @@
     </div>
 </div>
 <div id="meet">Meet some of our Greeter Destinations</div>
+<!--
+  <div id="signupModal" class="modal">
+    <span onclick="document.getElementById('signupModal').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+    <form class="animate modalContent">
+        <div class="signupContainer">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
 
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+
+
+    <button type="submit">Submit</button>
+    <input type="checkbox" checked="checked"> Remember me
+
+  <div class="signupContainer" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"><a href="#">Forgot password?</a></span>
+  </div>
+        
+    </form>
+</div>  
+-->
+<div id="loginModal" class="modal">
+    <span onclick="document.getElementById('loginModal').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+        <form class="animate modalContent">
+        <div class="loginContainer">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+
+
+    <button type="submit">Submit</button>
+    <input type="checkbox" checked="checked"/> Remember me
+</div>
+  <div class="loginContainer" id="inBlock" style="background-color:#f1f1f1">
+    <button type="button" id="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+        
+    </form>
+    </div>  
+  
 <div id="container1"></div>
  
 <div id="greenbottom">
